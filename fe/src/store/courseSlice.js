@@ -32,12 +32,5 @@ const courseSlice = createSlice({
   },
 })
 
-export const {
-  setCurrentLessonId,
-  setIsPlaying,
-  setPlaybackRate,
-  setProgress,
-  resetCourseState,
-} = courseSlice.actions
-
+export const { setCurrentLessonId, setIsPlaying, setPlaybackRate, setProgress, resetCourseState } = courseSlice.actions
 export default courseSlice.reducer
