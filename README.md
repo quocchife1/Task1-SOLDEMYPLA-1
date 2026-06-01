@@ -92,22 +92,6 @@ Khi video phát tới giây cuối cùng, trình phát phát tín hiệu kết t
 
 ---
 
-## 3. Câu Prompt Tiếng Việt Thiết Kế Sơ Đồ Luồng Hoạt Động (Flow Diagram Prompt)
-
-Bạn có thể sao chép đoạn prompt tiếng Việt dưới đây và dán vào các công cụ AI tạo hình ảnh/sơ đồ (như **ChatGPT Plus với DALL-E 3**, **Claude Artifacts**, **Eraser.io**, hoặc **Midjourney**) để tạo ra một sơ đồ cực kỳ trực quan và chuyên nghiệp:
-
-```text
-Vẽ một sơ đồ luồng kiến trúc phần mềm hiện đại, sắc nét và chuyên nghiệp thể hiện "Quy trình phát Video chuẩn HLS trên ứng dụng Web React". 
-Thiết kế sơ đồ theo phong cách tối (Dark Mode) với bảng màu cao cấp, bắt mắt: nền đen/xám đậm, các hộp chức năng của React dùng màu xanh neon nổi bật, trạng thái thành công dùng màu xanh ngọc lục bảo (emerald green), và các đường nối CDN/MinIO phát sáng màu tím đậm.
-
-Sơ đồ được bố cục rõ ràng theo từng bước với các khung hiển thị dạng kính mờ (glassmorphic) cùng mũi tên liên kết có kèm mô tả ngắn gọn. 
-Quy trình cần thể hiện rõ 3 cột dọc hoặc 3 khu vực chính:
-1. "BỘ LƯU TRỮ & BACKEND" (MinIO S3 CDN lưu trữ các phân đoạn video .ts và file manifest .m3u8, kết hợp với Laravel API trả về dữ liệu khóa học).
-2. "TRÌNH XỬ LÝ REACT & REDUX" (Trang CoursePlayerPage tải dữ liệu, đồng bộ tiến trình vào Redux Store, và Component HlsVideoPlayer được tạo mới thông qua thuộc tính "key" để tối ưu bộ nhớ).
-3. "ĐỘNG CƠ HLS.JS & SỰ KIỆN" (Kiểm tra tương thích trình duyệt, khởi tạo thực thể Hls(), lắng nghe sự kiện MANIFEST_PARSED để lọc danh sách độ phân giải 1080p/720p/480p, tự động khôi phục lỗi Network/Media, và đồng bộ mốc thời gian thực tế qua sự kiện timeupdate).
-4. "TƯƠNG TÁC NGƯỜI DÙNG & KẾT THÚC BÀI HỌC" (Thanh điều khiển tự động ẩn sau 3 giây không tương tác, tooltip thời gian khi di chuột qua thanh tiến trình, hiển thị đếm ngược 5 giây "Up Next" khi hết video để tự động chuyển bài tiếp theo).
-
-Thêm các biểu tượng lập trình hiện đại như biểu tượng API, biểu tượng trình phát video, cơ sở dữ liệu và bánh răng cài đặt. Toàn bộ sơ đồ phải trông thật hiện đại, sạch sẽ, kiểu chữ tối giản sang trọng với các đường dẫn phát sáng trực quan thể hiện đường đi của luồng truyền dữ liệu phát trực tuyến. Không dùng các nét vẽ thô sơ hoặc lỗi thời.
 ```
 ![Sơ đồ hoạt động](https://github.com/quocchife1/Task1-SOLDEMYPLA-1/blob/main/Gemini_Generated_Image_4xzrm4xzrm4xzrm4.png)
 ---
