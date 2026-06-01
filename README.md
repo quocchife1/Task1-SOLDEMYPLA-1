@@ -91,7 +91,5 @@ Khi video phát tới giây cuối cùng, trình phát phát tín hiệu kết t
     *   Nếu hết 5 giây đếm ngược mà không bị hủy, callback `onPlayNextLesson` được gọi. Trang cha thực hiện đổi `currentLessonId` sang bài tiếp theo, kích hoạt lại toàn bộ vòng đời phát video cho bài học mới.
 
 ---
-
-```
 ![Sơ đồ hoạt động](https://github.com/quocchife1/Task1-SOLDEMYPLA-1/blob/main/Gemini_Generated_Image_4xzrm4xzrm4xzrm4.png)
 ---
